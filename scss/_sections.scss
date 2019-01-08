@@ -1,0 +1,262 @@
+// main: main.scss
+
+//custom styles for each section
+
+.section1 {
+  background-color: $orange;
+  background-image: url('../images/background/background-section1.jpg');
+  .moving-element {
+    background-image: url('../images/background/pig-rocket1.png');
+    background-position: top left;
+    background-size: auto 100%;
+    @media #{$media-lg-min} {
+      background-attachment: fixed;
+    }
+  }
+  .isle-of-malta {
+    width: 18rem;
+    @media #{$media-sm-min} {
+      width: 24rem;
+    }
+    position: relative;
+    z-index: 5;
+    top: -2%;
+  }
+  .btn-black {
+    margin: auto;
+    margin-bottom: 3rem;
+    align-self: flex-end;
+  }
+}
+
+.section2 {
+  background-image: url('../images/background/background-section2.jpg');
+  background-color: $purple;
+  .photos-last-editions {
+    margin-top: auto;
+    z-index: 1;
+    .edition-title-mobile {
+      padding: 2rem 3rem;
+      margin-bottom: 3rem;
+      @extend %black-text-background;
+      @media #{$media-md-min} {
+        display:none;
+      }
+    }
+    img {
+      border: 0.4rem solid #fff;
+      margin:auto;
+      margin-bottom: 0.5rem;
+      position: relative;
+      width:90%;
+      z-index: 5;
+    }
+  }
+  .left .photos-last-editions {
+    img.left-rotate {
+      @include transform(rotate(-10deg));
+    }
+    img.right-rotate {
+      @include transform(rotate(5deg));
+    }
+  }
+  .right .photos-last-editions {
+    img.left-rotate {
+      @include transform(rotate(-5deg));
+    }
+    img.right-rotate {
+      @include transform(rotate(10deg));
+    }
+  }
+  .player {
+    margin: 2rem 0;
+    padding-top: 60%;
+    position:relative;
+    width: 100%;
+    iframe, .onplayer {
+      position: absolute;
+      top: 0;
+      left:0;
+      height:100%;
+      width:100%;
+    }
+    .onplayer {
+      content:'';
+      background-image: url('../images/background/onplayer-text.png'), url('../images/background/onplayer-background.png');
+      background-repeat: no-repeat;
+      background-size: auto 90%, cover;
+      background-position: right center, right center;
+      .malta-tv-btn {
+        position: absolute;
+        bottom: 1rem;
+        left:1rem;
+        background-color: transparent;
+        background-image: url('../images/png/malta-tv.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        margin:0;
+        height: 5rem;
+        width:4rem;
+      }
+    }
+  }
+
+  .text-big-bold {
+    margin-bottom: 0.5rem;
+  }
+  .editions-buttons {
+    z-index: -1;
+    a {
+      @extend %black-text-background;
+      padding: 0.7rem 1rem;
+      &.first-edition {
+        i { margin-right: 1rem; }
+        padding-left: 5rem;
+        margin-left: -5rem;
+      }
+      &.second-edition {
+        i { margin-left: 1rem; }
+        padding-right: 5rem;
+        margin-right: -5rem;
+      }
+    }
+  }
+}
+
+.section3 {
+  background-color: $orange;
+  background-image: url('../images/background/background-section3_street.jpg');
+  .moving-element {
+    background-image: url('../images/background/background-section3_motor.png');
+    background-position: right bottom;
+  }
+  .left {
+    background-image: url('../images/background/background-section3_triangles.png');
+    padding-bottom: 8rem;
+  }
+}
+
+.section4 {
+  background-color: $purple;
+  background-image: url('../images/background/background-section4_wall.jpg');
+  .moving-element {
+    background-image: url('../images/background/background-section4_pig.png');
+    background-position: left center;
+  }
+  .contents {
+    z-index: 16;
+    position:relative;
+    .btn-pink {
+      margin:auto;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      @media #{$media-md-min} {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+      }
+      position:relative;
+      z-index: 20;
+    }
+    .sticker {
+      height:80px;
+      width: 80px;
+      content:'';
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      &.sticker-thumb {
+        background-image: url("../images/png/sticker-thumb.png");
+      }
+      &.sticker-plane {
+        background-image: url("../images/png/sticker-plane.png");
+      }
+    }
+  }
+  .left .contents img {
+    height: 8rem;
+    margin-top: -10rem;
+  }
+}
+
+
+.section5 {
+  background-color: $purple;
+  background-image: url('../images/background/background-section5_sky.jpg');
+  .moving-element {
+    background-image: url('../images/background/background-section5_pig.png');
+    background-position: right top;
+  }
+  .left {
+    background-image: url('../images/background/background-section5_squares.png');
+    padding-bottom: 5rem;
+    .contents {
+      margin-top: -4rem;
+      img {
+        height: 9rem;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.section6 {
+  background-color: $orange;
+  background-image: url('../images/background/background-section6_room.jpg');
+  .moving-element {
+    background-image: url('../images/background/background-section6_pig.png');
+    background-position: right center;
+  }
+  .right {
+    .contents {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+.section7 {
+  background-color: $purple;
+  background-image: url('../images/background/background-section7_pig-glasses.jpg');
+  .left {
+    .contents {
+      z-index: 10;
+      padding: 2rem;
+      .text-medium, button, img {
+        position:relative;
+        z-index: 1;
+      }
+      img {
+        width: 90%;
+        padding: 0.5rem 0 1rem 0;
+      }
+      &:before {
+        position:absolute;
+        top: 0;
+        left: 0;
+        height:100%;
+        width:100%;
+        content:'';
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  .right .contents {
+  .stickers {
+    position:absolute;
+    top: -5rem;
+    @media #{$media-lg-min} {
+      position:relative;
+      top:0;
+      margin-top: -6rem;
+    }
+
+    img {
+      height: 6rem;
+      margin:1rem;
+      position: relative;
+
+    }
+  }
+}
+}

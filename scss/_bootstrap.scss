@@ -1,0 +1,35 @@
+// main: main.scss
+
+// Modify and extend default bootstrap elements
+
+.container-fluid {
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+
+.btn {
+  font-family: $font-button;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  border-radius: 0;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  margin: 1rem;
+  	@include transition(0.3s ease-in);
+  i {padding-left: 1rem;}
+  @media #{$media-md-min} {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem 0.5rem 3rem;
+  }
+  @media #{$media-lg-min} {
+    font-size: 1.7rem;
+  }
+  &:focus, &:active {
+    box-shadow: none;
+  }
+  &:hover {
+    @include transform(scale(1.1));
+@include transition(0.3s ease-out);
+  }
+}

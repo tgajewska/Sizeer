@@ -1,0 +1,167 @@
+// main: main.scss
+
+//basic styles for basic or repeating elements
+
+html, body {
+  font-family: $font-default;
+  font-size: 12px;
+  @media #{$media-md-min} {
+    font-size: 14px;
+  }
+  @media #{$media-lg-min} {
+    font-size: 16px;
+  }
+  font-style: normal;
+  font-weight: 400;
+  width:100%;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-pink {
+  background-color: $pink;
+  color: #fff;
+  cursor:pointer;
+}
+
+h2, .text-big-bold, .editions-buttons a {
+  @extend %main-text-style;
+  font-family: $font-header;
+  font-size: 2rem;
+}
+
+.shadow { @include box-shadow(0 5px 10px $gray-medium ); }
+
+section {
+  position:relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.moving-element {
+  position:absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  display:none;
+  @media #{$media-md-min} {
+    display:inline;
+  }
+}
+
+.contents {
+  width: 70%;
+  text-align: center;
+  position:relative;
+}
+
+.left {
+.contents {
+  margin: auto;
+  @media #{$media-md-min} {
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 2rem;
+  }
+}
+}
+
+.right {
+.contents {
+  padding-top: 4rem;
+  margin: auto;
+  @media #{$media-md-min} {
+    margin-right: auto;
+    margin-left: 0;
+    padding-left: 5rem;
+    padding-top: 0;
+  }
+  @media #{$media-xl-min} {
+    padding-left: 10rem;
+  }
+  .text-medium {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+&.right-background {
+  background-image: url('../images/background/background-section4_sticks.png');
+  background-size: 150% 300%;
+  background-repeat: no-repeat;
+    background-position: right bottom;
+  @media #{$media-md-min} {
+    background-size: 100% 300%;
+  }
+}
+}
+
+
+.left, .right, .center {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.container-h1 {
+  width:100%;
+  h1 {
+    @extend %main-text-style;
+    font-family: $font-header;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    margin-top:4rem;
+    position: relative;
+    z-index: 1;
+    @media #{$media-sm-min} {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+    @media #{$media-md-min} {
+      line-height: 3.5rem;
+    }
+    span {
+      position:relative;
+      padding: 0.5rem 1rem;
+      @extend %black-text-background;
+    }
+  }
+}
+
+.text-big, .text-medium {
+  @extend %main-text-style;
+  font-family: $font-big-text;
+}
+
+.text-big {
+  font-size: 1.5rem;
+  @media #{$media-md-min} {
+    font-size: 2rem;
+  }
+}
+
+.text-medium {
+  font-size: 1.2rem;
+  @media #{$media-md-min} {
+    font-size: 1.5rem;
+  }
+}
+
+.hash {
+  font-family: $font-header;
+}
+
+.hash-pink {
+  color: $pink;
+}

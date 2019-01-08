@@ -1,0 +1,43 @@
+// main: main.scss
+
+//mixins
+
+@mixin transform($attr) {
+	-webkit-transform: $attr;
+	-moz-transform: $attr;
+	-ms-transform: $attr;
+	-o-transform: $attr;
+	transform: $attr;
+}
+
+@mixin transition($attr) {
+	-webkit-transition: $attr;
+	-moz-transition: $attr;
+	-ms-transition: $attr;
+	-o-transition: $attr;
+	transition: $attr;
+}
+
+@mixin box-shadow($attr) {
+	-webkit-box-shadow: $attr;
+	-moz-tbox-shadow: $attr;
+	-ms-box-shadow: $attr;
+	-o-box-shadow: $attr;
+	box-shadow: $attr;
+}
+
+//extentions
+
+%main-text-style {
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
+%black-text-background {
+  background: url('../images/png/black-text-background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

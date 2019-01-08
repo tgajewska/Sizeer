@@ -1,0 +1,28 @@
+// main: main.scss
+
+
+//fonts and colours variables
+
+$font-default : 'Open Sans Condensed', sans-serif;
+$font-header : 'Futura PT-Bold', sans-serif;
+$font-big-text : 'Futura PT', sans-serif;
+$font-button : "Bebas Neue W01 Regular", sans-serif;
+
+$gray-dark : #191919;
+$gray-medium : #afafaf;
+$gray-light : #c0c0c0;
+$orange : #f68100;
+$pink : #ff296b;
+$purple : #251432;
+
+//RWD
+
+$sm-min: 576px;
+$md-min: 768px;
+$lg-min: 992px;
+$xl-min: 1200px;
+
+$media-sm-min:         "only screen and (min-width: " + $sm-min + ")";
+$media-md-min:         "only screen and (min-width: " + $md-min + ")";
+$media-lg-min:         "only screen and (min-width: " + $lg-min + ")";
+$media-xl-min:         "only screen and (min-width: " + $xl-min + ")";
