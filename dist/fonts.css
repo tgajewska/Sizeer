@@ -1,0 +1,14 @@
+/* === Open Sans Condensed - 300 */
+@font-face {
+	font-family: 'Open Sans Condensed';
+	font-style: normal;
+	font-weight: 300;
+	src: url("./font/OpenSansCondensed-Light.eot");
+	src: local("Open Sans Condensed Light"),
+		local("OpenSansCondensed-Light"),
+		url("./font/OpenSansCondensed-Light.eot") format("embedded-opentype"),
+		url("./font/OpenSansCondensed-Light.woff2") format("woff2"),
+		url("./font/OpenSansCondensed-Light.woff") format("woff"),
+		url("./font/OpenSansCondensed-Light.ttf") format("truetype"),
+		url("./font/OpenSansCondensed-Light.svg") format("svg");
+}

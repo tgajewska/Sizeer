@@ -1,0 +1,32 @@
+@font-face {
+  font-family:"Bebas Neue W01 Regular";
+  src:url("./fonts/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix");
+  src:url("./fonts/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix") format("eot"),
+  url("./fonts/e0d6f852-5401-4bbf-9672-47a50c5c87c6.woff2") format("woff2"),
+  url("./fonts/7fedd582-6ae3-4850-be2f-4acae2e74fa5.woff") format("woff"),
+  url("./fonts/d6e08ef3-40db-4ac3-82df-f062f55a72f5.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('./fonts/FuturaPT-Medium.eot');
+    src: url('./fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype');
+    src: url('./fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/FuturaPT-Medium.woff2') format('woff2'),
+        url('./fonts/FuturaPT-Medium.woff') format('woff'),
+        url('./fonts/FuturaPT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT-Bold';
+    src: url('./fonts/FuturaPT-Bold.eot');
+    src: url('./fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/FuturaPT-Bold.woff2') format('woff2'),
+        url('./fonts/FuturaPT-Bold.woff') format('woff'),
+        url('./fonts/FuturaPT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
