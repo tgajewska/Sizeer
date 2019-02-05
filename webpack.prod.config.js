@@ -7,6 +7,7 @@ const GoogleFontsPlugin = require("@beyonk/google-fonts-webpack-plugin");
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 
+
 module.exports = {
     entry: [
         './src/index.js',
@@ -18,6 +19,7 @@ module.exports = {
         publicPath: ''
     },
     mode: 'production',
+
     module: {
         rules: [
             {

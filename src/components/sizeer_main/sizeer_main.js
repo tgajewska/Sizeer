@@ -1,5 +1,5 @@
 import './scss/main.scss';
-
+var $ = require("jquery");
 
 class SizeerAnimations {
 
@@ -10,7 +10,7 @@ changeHeader() {
         const $uppernav = $(".upper-navbar");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $uppernav.height());
     })
-    };
+    }
 
 //init youtube
 playYoutube() {

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.config.js",
-    "dev": "webpack-dev-server --config webpack.dev.config.js --hot"
+    "dev": "webpack-dev-server --config webpack.dev.config.js --hot",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,11 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "clean-webpack-plugin": "^1.0.1",
+    "eslint": "^5.13.0",
     "font-awesome-loader": "^1.0.2",
     "mini-css-extract-plugin": "^0.5.0",
     "preload-webpack-plugin": "^3.0.0-beta.3",
@@ -49,6 +52,8 @@
     "popper.js": "^1.14.7",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.1.1"
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "wow.js": "^1.2.2",
+    "wowjs": "^1.1.3"
   }
 }
